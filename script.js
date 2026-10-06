@@ -16,7 +16,8 @@ for(let i = 0; i < 16; i ++){
     //Create 16 "node" divs in each column
     for(let i = 0; i < 16; i ++){
         const node = document.createElement("div");
-        node.classList.add("node");
+        node.classList.add("node")
+        node.addEventListener("mouseover", () => node.style.backgroundColor = "black");
         column.appendChild(node);
     }
     canvas.appendChild(column);
@@ -36,7 +37,7 @@ function generateGrid(gridArea){
         for(let i = 0; i < gridArea; i ++){
             const node = document.createElement("div");
             node.classList.add("node");
-        
+            node.addEventListener("mouseover", () => node.style.backgroundColor = "black");
             column.appendChild(node);
         }
         canvas.appendChild(column);
