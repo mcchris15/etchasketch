@@ -1,0 +1,21 @@
+#container{
+    display: flex;
+    width: 960px;
+    height: 960px;
+    background-color: antiquewhite;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    
+}
+
+.node{
+    flex: 1;
+    align-items:stretch;
+    border: 1px solid black;
+}
